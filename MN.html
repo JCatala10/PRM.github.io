@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Custom CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        #menu {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo h2 {
+            margin: 0;
+        }
+        .items {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .items li {
+            margin-right: 20px;
+        }
+        .items li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #ddd;
+            border-bottom: 1px solid #ccc;
+        }
+        .search input[type="text"] {
+            width: 200px;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+        }
+        .profile img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .card-title {
+            margin-top: 0;
+            color: #007bff;
+        }
+        #notes {
+            margin-top: 20px;
+        }
+        #notes .note {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+        #notes .note:last-child {
+            border-bottom: none;
+        }
+        #notes .note p {
+            margin: 5px 0;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .note-section {
+            display: flex;
+            justify-content: space-between;
+        }
+        .note-section .card {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .note-section #notes {
+            flex: 1;
+            max-width: 300px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section id="menu">
+        <div class="logo">
+            <h2>Software Builders Group</h2>
+        </div>
+        <div class="items">
+            <li><i class="fa fa-home"></i><a href="Start.html">Home</a></li>
+            <li><i class="fa fa-folder"></i><a href="Project 1.html">Back to project</a></li>
+        </div>
+    </section>
+
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+            <div class="profile">
+            </div>
+        </div>
+    
+        <div class="container my-3">
+            <h1>Meeting Notes</h1>
+            <div class="note-section">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Add Notes</h5>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                            <textarea class="form-control" id="addTxt" rows="3" placeholder="Your Meeting Note"></textarea>
+                        </div>
+                        <button class="btn btn-primary" id="addBtn" onclick="addNote()">Add Note</button>
+                    </div>
+                </div>
+                <div id="notes">
+                    <h2>Your Notes</h2>
+                    <div class="note">
+                        <p><strong>Project Lead (Manager):</strong></p>
+                        <p>Reviewed the architectural plans with the team. Discussed the timeline and assigned tasks for the foundation phase.</p>
+                    </div>
+                    <div class="note">
+                        <p><strong>Site Engineer (Engineer):</strong></p>
+                        <p>Updated the foundation layout based on the latest survey data. Coordinated with the excavation team to ensure alignment.</p>
+                    </div>
+                    <div class="note">
+                        <p><strong>Safety Officer (Safety):</strong></p>
+                        <p>Conducted a safety drill for all workers on site. Emphasized the importance of wearing personal protective equipment (PPE).</p>
+                    </div>
+                    <div class="note">
+                        <p><strong>Procurement Officer (Procurement):</strong></p>
+                        <p>Ordered the required materials for the next phase of construction. Ensured timely delivery to avoid delays.</p>
+                    </div>
+                    <div class="note">
+                        <p><strong>Quality Inspector (Quality):</strong></p>
+                        <p>Inspected the quality of materials delivered. Reported on the compliance of materials with project specifications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script>
+        function addNote() {
+            let noteText = document.getElementById('addTxt').value;
+            let nameText = document.getElementById('name').value;
+            if (noteText && nameText) {
+                let notesContainer = document.getElementById('notes');
+                let newNote = document.createElement('div');
+                newNote.classList.add('note');
+                newNote.innerHTML = `<p><strong>${nameText}:</strong></p><p>${noteText}</p>`;
+                notesContainer.appendChild(newNote);
+                document.getElementById('addTxt').value = '';
+                document.getElementById('name').value = '';
+            }
+        }
+    </script>
+</body>
+</html>

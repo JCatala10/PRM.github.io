@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDE and Finished Materials List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Custom CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        #menu {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo h2 {
+            margin: 0;
+        }
+        .items {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .items li {
+            margin-right: 20px;
+        }
+        .items li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #ddd;
+            border-bottom: 1px solid #ccc;
+        }
+        .search input[type="text"] {
+            width: 200px;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+        }
+        .profile img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .card-title {
+            margin-top: 0;
+            color: #007bff;
+        }
+        #notes {
+            margin-top: 20px;
+        }
+        #notes .note {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+        #notes .note:last-child {
+            border-bottom: none;
+        }
+        #notes .note p {
+            margin: 5px 0;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .finished-materials-list {
+            list-style: none;
+            padding: 0;
+        }
+        .finished-materials-list li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .finished-materials-list li:last-child {
+            border-bottom: none;
+        }
+        .material {
+            font-weight: bold;
+        }
+        .quantity {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <section id="menu">
+        <div class="logo">
+            <h2>Software Builders Group</h2>
+        </div>
+        <div class="items">
+            <li><i class="fa fa-home"></i><a href="Start.html">Home</a></li>
+            <li><i class="fa fa-folder"></i><a href="Project 1.html">Back to project</a></li>
+        </div>
+    </section>
+
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+            <div class="profile">
+            </div>
+        </div>
+            <hr />
+            <h1>Finished Materials List</h1>
+            <ul class="finished-materials-list">
+                <li>
+                    <span class="material">Wooden Boards</span>
+                    <span class="quantity">10 pieces</span>
+                </li>
+                <li>
+                    <span class="material">Steel Bars</span>
+                    <span class="quantity">20 meters</span>
+                </li>
+                <li>
+                    <span class="material">Concrete Blocks</span>
+                    <span class="quantity">100 units</span>
+                </li>
+                <li>
+                    <span class="material">Brick Pavers</span>
+                    <span class="quantity">500 pieces</span>
+                </li>
+                <li>
+                    <span class="material">Tiles</span>
+                    <span class="quantity">200 square meters</span>
+                </li>
+                <li>
+                    <span class="material">Glass Panels</span>
+                    <span class="quantity">50 square meters</span>
+                </li>
+                <li>
+                    <span class="material">Insulation Foam</span>
+                    <span class="quantity">300 square meters</span>
+                </li>
+                <li>
+                    <span class="material">Copper Wiring</span>
+                    <span class="quantity">1000 meters</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

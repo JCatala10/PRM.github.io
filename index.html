@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDE - Welcome</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        #menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+            color: white;
+        }
+        #menu .logo h2 {
+            margin: 0;
+        }
+        #menu .items ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        #menu .items ul li {
+            margin-right: 20px;
+        }
+        #menu .items ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        #interface {
+            padding: 0px;
+        }
+        .welcome-section {
+            text-align: center;
+            padding: 5px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px; /* Adjust the margin as needed */
+        }
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 10px;
+            max-width: 800px; /* Adjust as needed */
+            width: 100%;
+        }
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: #fff;
+            border: 2px solid #000;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .box ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .box ul li {
+            margin: 5px 0;
+        }
+        .box ul li a {
+            text-decoration: none;
+            color: black;
+        }
+        .timetable {
+            margin-top: 50px;
+            border-collapse: collapse;
+            width: 80%;
+        }
+        .timetable th, .timetable td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        .timetable th {
+            background-color: #333;
+            color: white;
+        }
+        .timetable tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="menu">
+        <div class="logo">
+            <h2>Software Builders Group</h2>
+        </div>
+        <div class="items">
+            <ul>
+                <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="welcome-section">
+            <h1>Welcome to Our Project Management Platform</h1>
+        </div>
+
+        <div class="projects-container">
+            <div class="box">
+                <ul>
+                    <li><a href="index1.html">InfinityPlaza</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <ul>
+                    <li><a href="index2.html">ZenithTower</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <ul>
+                    <li><a href="indext3.html">HorizonHaven</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <ul>
+                    <li><a href="index4.html">Fitcube</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Project Timetable</h2>
+        <table class="timetable">
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>InfinityPlaza</td>
+                    <td>2024-06-01</td>
+                    <td>2024-12-31</td>
+                </tr>
+                <tr>
+                    <td>ZenithTower</td>
+                    <td>2024-07-01</td>
+                    <td>2024-12-31</td>
+                </tr>
+                <tr>
+                    <td>HorizonHaven</td>
+                    <td>2024-08-01</td>
+                    <td>2024-12-31</td>
+                </tr>
+                <tr>
+                    <td>Fitcube</td>
+                    <td>2024-09-01</td>
+                    <td>2024-12-31</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
